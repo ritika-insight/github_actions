@@ -20,6 +20,6 @@ jobs:
 
       - name: Deploy
         run: |
-          cd ./Terraform/
+          cd ./Terraform/task_yaml
           terraform init -backend-config="access_key=${{ secrets.ACCESS_KEY }}"
           terraform apply -var="vm_password=${{ secrets.VM_PASSWORD }}" -auto-approve
