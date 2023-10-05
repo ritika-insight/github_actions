@@ -1,0 +1,25 @@
+name: Deploy_task
+
+on: 
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Deploy
+        run: |
+          cd ./Terraform/
+          terraform init -backend-config="access_key=${{ secrets.ACCESS_KEY }}"
+          terraform apply -var="vm_password=${{ secrets.VM_PASSWORD }}" -auto-approve
