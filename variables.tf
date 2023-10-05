@@ -38,6 +38,10 @@ variable "vm_size" {
   default = "Standard_DS1_v2"
 }
 
+variable "pip_name" {
+  default = "qt-eastus-test-pip-1"
+}
+
 
 
 

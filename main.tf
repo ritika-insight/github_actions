@@ -8,6 +8,7 @@ module "vnet" {
   subnet_address_prefixes  = var.subnet_address_prefixes
 }
 
+
 module "virtual_machine" {
   source                   = "./modules/virtual_machine"
   resource_group_name      = var.resource_group_name
@@ -17,5 +18,6 @@ module "virtual_machine" {
   vm_size                  = var.vm_size
   subnet_id                = module.vnet.subnet_id
   vm_password              = var.vm_password
+  pip_name                 = var.pip_name
 }
 
