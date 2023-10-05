@@ -1,9 +1,3 @@
-# resource "random_integer" "deployment" {
-#   min = 10000
-#   max = 99999
-# }
-
-
 module "vnet" {
   source                   = "./modules/network/vnet"
   resouresource_group_name = var.resource_group_name
