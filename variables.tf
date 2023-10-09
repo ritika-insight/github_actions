@@ -2,17 +2,11 @@ variable "environment" {}
 
 variable "vm_password" {}
 
-variable "vnet_name" {
-  default = ""
-}
+variable "vnet_name" {}
 
-variable "location" {
-  default = ""
-}
+variable "location" {}
 
-variable "resource_group_name" {
-  default = ""
-}
+variable "resource_group_name" {}
 
 variable "vnet_address_space" {
   type = list(string)
@@ -24,45 +18,25 @@ variable "subnet_address_prefixes" {
   default = ""
 }
 
-variable "subnet_name" {
-  default = ""
-}
+variable "subnet_name" {}
 
-variable "nic_name" {
-  default = ""
-}
+variable "nic_name" {}
 
-variable "vm_name" {
-  default = ""
-}
+variable "vm_name" {}
 
-variable "vm_size" {
-  default = ""
-}
+variable "vm_size" {}
 
-variable "ordinal" {
-  default = ""
-}
+variable "ordinal" {}
 
-variable "image_offer" {
-  default = ""
-}
+variable "image_offer" {}
 
-variable "image_publisher" {
-  default = ""
-}
+variable "image_publisher" {}
 
-variable "image_sku" {
-  default = ""
-}
+variable "image_sku" {}
 
-variable "image_version" {
-  default = ""
-}
+variable "image_version" {}
 
-variable "managed_disk_type" {
-  default = ""
-}
+variable "managed_disk_type" {}
 
 
 
