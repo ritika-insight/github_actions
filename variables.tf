@@ -10,13 +10,11 @@ variable "resource_group_name" {}
 
 variable "vnet_address_space" {
   type = list(string)
-  default = ""
-}
+  }
 
 variable "subnet_address_prefixes" {
   type = list(string)
-  default = ""
-}
+  }
 
 variable "subnet_name" {}
 
