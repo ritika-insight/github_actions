@@ -4,8 +4,8 @@ module "vnet" {
   location                 = "${var.environment}-${var.location}-${var.location}-${var.ordinal}"
   vnet_name                = "${var.environment}-${var.location}-${var.vnet_name}-${var.ordinal}"
   subnet_name              = "${var.environment}-${var.location}-${var.subnet_name}-${var.ordinal}"
-  vnet_address_space       = "${var.environment}-${var.location}-${var.vnet_address_space}-${var.ordinal}"
-  subnet_address_prefixes  = "${var.environment}-${var.location}-${var.subnet_address_prefixes}-${var.ordinal}"
+  vnet_address_space       = var.vnet_address_space
+  subnet_address_prefixes  = var.subnet_address_prefixes
 }
 
 
@@ -15,13 +15,13 @@ module "virtual_machine" {
   location                 = "${var.environment}-${var.location}-${var.location}-${var.ordinal}"
   vm_name                  = "${var.environment}-${var.location}-${var.vm_name}-${var.ordinal}"
   nic_name                 = "${var.environment}-${var.location}-${var.nic_name}-${var.ordinal}"
-  vm_size                  = "${var.environment}-${var.location}-${var.vm_size}-${var.ordinal}"
+  vm_size                  = var.vm_size
   subnet_id                = module.vnet.subnet_id
-  vm_password              = "${var.environment}-${var.location}-${var.vm_password}-${var.ordinal}"
-  image_offer              = "${var.environment}-${var.location}-${var.image_offer}-${var.ordinal}"
-  image_publisher          = "${var.environment}-${var.location}-${var.image_publisher}-${var.ordinal}"
-  image_sku                = "${var.environment}-${var.location}-${var.image_sku}-${var.ordinal}"
-  image_version            = "${var.environment}-${var.location}-${var.image_version}-${var.ordinal}"
-  managed_disk_type        = "${var.environment}-${var.location}-${var.managed_disk_type}-${var.ordinal}"
+  vm_password              = var.vm_password
+  image_offer              = var.image_offer
+  image_publisher          = var.image_publisher
+  image_sku                = var.image_sku
+  image_version            = var.image_version
+  managed_disk_type        = var.managed_disk_type
 }
 
