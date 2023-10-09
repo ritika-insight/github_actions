@@ -9,7 +9,7 @@ variable "location" {
 }
 
 variable "resource_group_name" {
-  default = "git-r"
+  default = "qt-eastus-test-rg-1"
 }
 
 variable "vnet_address_space" {
@@ -36,10 +36,6 @@ variable "vm_name" {
 
 variable "vm_size" {
   default = "Standard_DS1_v2"
-}
-
-variable "pip_name" {
-  default = "qt-eastus-test-pip-1"
 }
 
 

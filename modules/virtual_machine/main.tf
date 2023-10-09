@@ -11,11 +11,10 @@ resource "azurerm_network_interface" "nic" {
 }
 
 resource "azurerm_public_ip" "pip" {
-  name                = var.pip_name
+  name                = "${var.vm_name}-pip"  #append 2 strings
   resource_group_name = var.resource_group_name
   location            = var.location
   allocation_method   = "Static"
-
 }
 
 resource "azurerm_virtual_machine" "vm" {

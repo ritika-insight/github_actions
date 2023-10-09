@@ -18,6 +18,5 @@ module "virtual_machine" {
   vm_size                  = var.vm_size
   subnet_id                = module.vnet.subnet_id
   vm_password              = var.vm_password
-  pip_name                 = var.pip_name
 }
 

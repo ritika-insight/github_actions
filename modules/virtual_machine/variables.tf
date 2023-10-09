@@ -10,6 +10,4 @@ variable "vm_size" {}
 
 variable "vm_password" {}
 
-variable "pip_name" {}
-
 variable "subnet_id" {}
