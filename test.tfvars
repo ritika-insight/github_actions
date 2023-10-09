@@ -1,16 +1,15 @@
 environment = "qt"
 location = "eastus"
 ordinal = "01"
+resource_group_name = "rg"
 
 #VNET
-resource_group_name = "rg"
 vnet_name = "vnet"
 vnet_address_space = ["10.0.0.0/16"]
 subnet_address_prefixes = ["10.0.1.0/24"]
 subnet_name = "subnet"
 
 #VIRTUAL MACHINE
-resource_group_name = "rg"
 nic_name = "nic"
 vm_name = "vm"
 vm_size = "value"
