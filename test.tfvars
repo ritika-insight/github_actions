@@ -1,6 +1,6 @@
 environment = "qt"
 location = "eastus"
-ordinal = "01"
+ordinal = "1"
 resource_group_name = "rg"
 
 #VNET
