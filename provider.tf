@@ -10,7 +10,7 @@ terraform {
   }
   backend "azurerm" {
     resource_group_name  = "qt-eastus-test-rg-1"
-    storage_account_name = "qt-eastus-test-str-account-1"
+    storage_account_name = "qteastusteststr1"
     container_name       = "qt-eastus-test-container-1"
     key                  = "qt-eastus-test-task-key-1"
   }
