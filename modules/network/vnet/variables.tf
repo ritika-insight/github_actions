@@ -1,3 +1,5 @@
+variable "environment" {}
+
 variable "vnet_name" {}
 
 variable "location" {}
@@ -9,3 +11,4 @@ variable "vnet_address_space" {}
 variable "subnet_address_prefixes" {}
 
 variable "subnet_name" {}
+

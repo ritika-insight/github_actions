@@ -1,3 +1,5 @@
+variable "environment" {}
+
 variable "location" {}
 
 variable "resource_group_name" {}
@@ -21,3 +23,4 @@ variable "image_sku" {}
 variable "image_version" {}
 
 variable "managed_disk_type" {}
+
