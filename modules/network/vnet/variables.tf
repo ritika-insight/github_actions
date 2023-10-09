@@ -1,5 +1,3 @@
-variable "environment" {}
-
 variable "vnet_name" {}
 
 variable "location" {}
