@@ -17,6 +17,6 @@ vm_size = "Standard_DS1_v2"
 # subnet_id = 
 image_offer = "0001-com-ubuntu-server-focal"
 image_publisher = "Canonical"
-image_sku = "20_04-lts"
+image_sku = "20_04-lts"  
 image_version = "latest"
 managed_disk_type = "Standard_LRS"
