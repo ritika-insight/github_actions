@@ -12,7 +12,7 @@ subnet_name = "subnet"
 #VIRTUAL MACHINE
 nic_name = "nic"
 vm_name = "vm"
-vm_size = "value"
+vm_size = "Standard_DS1_v2"
 # vm_password =  
 # subnet_id = 
 image_offer = "0001-com-ubuntu-server-focal"
