@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"virtual_machine","Source":"./modules/virtual_machine","Dir":"modules/virtual_machine"},{"Key":"vnet","Source":"./modules/network/vnet","Dir":"modules/network/vnet"}]}
