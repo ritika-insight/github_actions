@@ -1,6 +1,6 @@
 module "vnet" {
   source                   = "./modules/network/vnet"
-  resource_group_name      = "${var.environment}-${var.location}-${var.resource_group_name}-${var.ordinal}"
+  resource_group_name      = "${var.environment}-${var.location}-test-${var.resource_group_name}-${var.ordinal}"
   location                 = var.location
   vnet_name                = "${var.environment}-${var.location}-${var.vnet_name}-${var.ordinal}"
   subnet_name              = "${var.environment}-${var.location}-${var.subnet_name}-${var.ordinal}"
@@ -11,7 +11,7 @@ module "vnet" {
 
 module "virtual_machine" {
   source                   = "./modules/virtual_machine"
-  resource_group_name      = "${var.environment}-${var.location}-${var.resource_group_name}-${var.ordinal}"
+  resource_group_name      = "${var.environment}-${var.location}-test-${var.resource_group_name}-${var.ordinal}"
   location                 = var.location
   vm_name                  = "${var.environment}-${var.location}-${var.vm_name}-${var.ordinal}"
   nic_name                 = "${var.environment}-${var.location}-${var.nic_name}-${var.ordinal}"
