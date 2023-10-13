@@ -21,8 +21,8 @@ virtual_machines = {
     managed_disk_type = "Standard_LRS"
     vm_size           = "Standard_DS1_v2"
     compute_name      = "vm-01"
-    admin_username    = "testadmin1"
-    admin_password    = "@test@123@azure"
+    vm_username       = "testadmin1"
+    vm_password       = "@test@123@azure"
   }
   "vm-02" = {
     vm_name           = "vm-02"
@@ -34,7 +34,7 @@ virtual_machines = {
     managed_disk_type = "Standard_LRS"
     vm_size           = "Standard_DS1_v2"
     compute_name      = "vm-02"
-    admin_username    = "testadmin2"
-    admin_password    = "@test@123@azure"
+    vm_username       = "testadmin2"
+    vm_password       = "@test@123@azure"
   }
 }
