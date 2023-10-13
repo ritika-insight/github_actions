@@ -8,7 +8,7 @@ variable "vm_name" {}
 
 variable "vm_size" {}
 
-variable "vm_username" {}
+variable "admin_password" {}
 
 variable "subnet_id" {}
 
@@ -22,6 +22,6 @@ variable "image_version" {}
 
 variable "managed_disk_type" {}
 
-variable "vm_password" {}
+variable "admin_username" {}
 
 variable "compute_name" {}

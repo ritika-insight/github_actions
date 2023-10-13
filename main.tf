@@ -27,7 +27,7 @@ module "virtual_machine" {
   image_version       = each.value.image_version
   managed_disk_type   = each.value.managed_disk_type
   compute_name        = each.value.compute_name
-  vm_username         = each.value.vm_username
-  vm_password         = each.value.vm_password
+  admin_username      = each.value.admin_username
+  admin_password      = each.value.admin_password
 }
 

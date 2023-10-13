@@ -38,8 +38,8 @@ resource "azurerm_virtual_machine" "vm" {
   }
   os_profile {
     computer_name  = var.compute_name
-    admin_username = var.vm_username
-    admin_password = var.vm_password
+    admin_username = var.admin_username
+    admin_password = var.admin_password
   }
   os_profile_linux_config {
     disable_password_authentication = false
