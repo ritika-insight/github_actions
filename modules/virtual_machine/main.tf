@@ -11,7 +11,7 @@ resource "azurerm_network_interface" "nic" {
 }
 
 resource "azurerm_public_ip" "pip" {
-  name                = "${var.vm_name}-pip"  #append 2 strings
+  name                = "${var.vm_name}-pip" #append 2 strings
   resource_group_name = var.resource_group_name
   location            = var.location
   allocation_method   = "Static"
@@ -37,9 +37,9 @@ resource "azurerm_virtual_machine" "vm" {
     managed_disk_type = var.managed_disk_type
   }
   os_profile {
-    computer_name  = "hostname"
-    admin_username = "testadmin"
-    admin_password = var.vm_password
+    computer_name  = var.compute_name
+    admin_username = var.admin_username
+    admin_password = var.admin_password
   }
   os_profile_linux_config {
     disable_password_authentication = false
