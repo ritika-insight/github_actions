@@ -28,8 +28,8 @@ variable "virtual_machines" {
     image_sku         = string
     image_version     = string
     managed_disk_type = string
-    admin_username    = string
-    admin_password    = string
+    vm_username       = string
+    vm_password       = string
     compute_name      = string
     })
   )
